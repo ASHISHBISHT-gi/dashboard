@@ -29,14 +29,14 @@
         flex-direction:column;
         height:12rem;
         border-radius:1rem;
-        border:1px solid red;
+        /* border:1px solid red; */
         background-color:rgba(29,32,75,255);
     }
     .top *{
         margin:0;
     }
     .head{
-        flex-basis: 70%;
+        flex-basis: 60%;
         display:flex;
         padding:0 8%;
         gap:1.5rem;
@@ -52,15 +52,35 @@
         outline:3px solid white;
         border-radius:50%;
     }
-
+    .name>p{
+        color:hsl(236, 100%, 87%);
+        font-weight:500;
+    }
+    .name>h2{
+        font-family:"Rubik", sans-serif;
+        font-weight:300;
+        color:hsl(236, 100%, 87%);
+    }
+    h1{
+        font-family:"Rubik", sans-serif;
+        font-weight:300;
+    }
     .duration{
         display:flex;
-        flex-basis:30%;
+        flex-basis:40%;
         align-items:center;
         border-radius:1rem;
+        font-family: "Rubik", sans-serif;
+        font-weight:500;
+        color:hsl(235, 45%, 61%);
         background-color:hsl(235, 46%, 20%);
         justify-content:space-around;
     }
+    .duration>p:nth-of-type(2){
+        color:hsl(236, 100%, 87%);
+    }
+
+
     /* 2nd phase */
     .data{
         height:9rem;
