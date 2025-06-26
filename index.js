@@ -3,9 +3,6 @@ const daily = document.querySelector('.duration>p:nth-of-type(1)');
 const weeks = document.querySelector('.duration>p:nth-of-type(2)');
 const months = document.querySelector('.duration>p:nth-of-type(3)');
 console.log(daily.innerText);
-// two for loops
-console.log(worked[0].children[0].innerText);
-console.log(worked[0].children[1].innerText);
 let data_json;
 
 //fetch data.json
