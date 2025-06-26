@@ -230,6 +230,8 @@
         grid-column: 1;
         display: flex;
         flex-direction: column;
+        position: relative;
+        background-color: hsl(235, 46%, 20%);;
     }
 
     .top * {
@@ -244,6 +246,8 @@
         flex-basis: 60%;
         background-color: hsl(246, 80%, 60%);
         border-radius: 1rem;
+        position: relative;
+        z-index:1;
     }
 
     .head>img {
@@ -306,12 +310,12 @@
     }
 
     .bg {
-        flex-basis: 20%;
+        /* flex-basis: 20%; */
         overflow: hidden;
     }
 
     .common {
-        flex-basis: 80%;
+        /* flex-basis: 80%; */
         color: hsl(236, 100%, 87%);
         background-color: hsl(235, 46%, 20%);
         padding: 5% 10%;
@@ -321,6 +325,7 @@
         position: relative;
         border-radius: 0.9rem;
         cursor: pointer;
+        z-index:2;
         /* justify-content:space-between; */
     }
 
@@ -424,13 +429,16 @@
     .heart {
         background-color: hsl(43, 84%, 65%);
     }
+    .handbag>img{
+        top:-30%;
+    }
 
     .console>img {
-        top: -5%;
+        top: -20%;
     }
 
     .book>img {
-        top: -5%;
+        top: -20%;
     }
 
     .jogging>img {
@@ -438,8 +446,11 @@
     }
 
     .heart>img {
-        left: 70%;
+        left: 60%;
+        top:-20%;
     }
-
+    .chat>img{
+        top:-40%;
+    }
 
 }
