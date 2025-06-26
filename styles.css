@@ -205,7 +205,7 @@
     main {
         display: grid;
         gap: 1.5rem;
-        grid-template-rows: 25vh 25vh;
+        grid-template-rows: 12.5rem 12.5rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
