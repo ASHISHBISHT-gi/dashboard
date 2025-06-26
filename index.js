@@ -7,9 +7,8 @@ console.log(daily.innerText);
 console.log(worked[0].children[0].innerText);
 console.log(worked[0].children[1].innerText);
 let data_json;
-//fetch data.json
-// http://127.0.0.1:5500/frontendio/Js/time-tracking-dashboard-main/data.json
 
+//fetch data.json
 fetch('https://ashishbisht-gi.github.io/dashboard/data.json')
     .then(response => {
         console.log(response);
@@ -23,13 +22,12 @@ function displayChange(format) {
     switch (format) {
         case 'Day':
             for(let i=0;i<6;i++){
-                worked[i].children[0].innerText=data_json[i].timeframes.daily.current+'hrs';
+                worked[i].children[0].innerText=data_json[i].timeframes.daily.current+' hrs';
                 worked[i].children[1].innerText="Last Day "+" - "+data_json[i].timeframes.daily.previous+"hrs";
             }
             break;
         case 'Week':
             for(let i=0;i<6;i++){
-                console.log(i);
                 worked[i].children[0].innerText=data_json[i].timeframes.weekly.current+" hrs";
                 worked[i].children[1].innerText="Last Week"+" - "+data_json[i].timeframes.weekly.previous+"hrs";
             }
