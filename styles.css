@@ -20,11 +20,9 @@
     }
 
     main {
-        /* border:1px solid red; */
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-
     }
 
     main>div {
@@ -36,7 +34,6 @@
         flex-direction: column;
         height: 12rem;
         border-radius: 1rem;
-        /* border:1px solid red; */
         background-color: rgba(29, 32, 75, 255);
     }
 
@@ -49,7 +46,6 @@
         display: flex;
         padding: 0 8%;
         gap: 1.5rem;
-        /* justify-content:space-between; */
         align-items: center;
         border-radius: 1rem;
         background-color: hsl(246, 80%, 60%);
@@ -61,7 +57,7 @@
         min-width: 0;
         aspect-ratio: 1;
         width: 20%;
-        outline: 3px solid white;
+        outline: 0.1875rem solid white;    /* was 3px */
         border-radius: 50%;
     }
 
@@ -97,12 +93,10 @@
         color: hsl(236, 100%, 87%);
     }
 
-
     /* 2nd phase */
     .data {
         height: 9rem;
         position: relative;
-        /* border:1px solid green; */
         overflow: hidden;
     }
 
@@ -124,10 +118,8 @@
         gap: 0.4rem;
         flex-direction: column;
         justify-content: center;
-        /* align-items:center; */
         color: white;
         width: 100%;
-        /* height:5.9rem; */
         height: 76%;
         position: absolute;
         background-color: hsl(235, 46%, 20%);
@@ -152,11 +144,7 @@
     }
 
     .header>p {
-        font-size: 18px;
-    }
-
-    .data {
-        /* border:1px solid green; */
+        font-size: 1.125rem;   /* was 18px */
     }
 
     .console {
@@ -215,23 +203,19 @@
     }
 
     main {
-        /* border: 5px solid red; */
         display: grid;
-        /* width: 30%; */
-        /* height:10rem; */
         gap: 1.5rem;
         grid-template-rows: 25vh 25vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .top {
-        /* border: 1px solid green; */
         grid-row: 1/3;
         grid-column: 1;
         display: flex;
         flex-direction: column;
         position: relative;
-        background-color: hsl(235, 46%, 20%);;
+        background-color: hsl(235, 46%, 20%);
     }
 
     .top * {
@@ -247,13 +231,13 @@
         background-color: hsl(246, 80%, 60%);
         border-radius: 1rem;
         position: relative;
-        z-index:1;
+        z-index: 1;
     }
 
     .head>img {
         aspect-ratio: 1;
         width: 40%;
-        outline: 3px solid hsl(236, 100%, 87%);
+        outline: 0.1875rem solid hsl(236, 100%, 87%);  /* was 3px */
         border-radius: 50%;
     }
 
@@ -296,10 +280,6 @@
         font-weight: 500;
     }
 
-
-
-
-    /* data */
     .data {
         display: flex;
         flex-direction: column;
@@ -310,12 +290,10 @@
     }
 
     .bg {
-        /* flex-basis: 20%; */
         overflow: hidden;
     }
 
     .common {
-        /* flex-basis: 80%; */
         color: hsl(236, 100%, 87%);
         background-color: hsl(235, 46%, 20%);
         padding: 5% 10%;
@@ -325,19 +303,18 @@
         position: relative;
         border-radius: 0.9rem;
         cursor: pointer;
-        z-index:2;
-        /* justify-content:space-between; */
+        z-index: 2;
     }
 
     .header {
         display: flex;
         align-items: center;
-        font-size: 18px;
+        font-size: 1.125rem;  /* was 18px */
         justify-content: space-between;
     }
 
     .header>p {
-        font-size: 18px;
+        font-size: 1.125rem;  /* was 18px */
         margin: 0;
     }
 
@@ -363,94 +340,24 @@
         font-weight: 300;
     }
 
-    /* Color */
-    .handbag {
-        background-color: hsl(15, 100%, 70%);
-    }
+    /* Structural & color classes */
+    .handbag { background-color: hsl(15, 100%, 70%); }
+    .data1 { grid-column: 2; grid-row: 1/2; }
+    .data2 { background-color: hsl(195, 74%, 62%); grid-column: 3; grid-row: 1/2; }
+    .data3 { background-color: hsl(348, 100%, 68%); grid-column: 4; grid-row: 1/2; }
+    .data4 { background-color: hsl(145, 58%, 55%); grid-column: 2; grid-row: 2/3; }
+    .data5 { background-color: hsl(264, 64%, 52%); grid-column: 3; grid-row: 2/3; }
+    .data6 { background-color: hsl(43, 84%, 65%); grid-column: 4; grid-row: 2/3; }
+    .console { background-color: hsl(195, 74%, 62%); }
+    .book    { background-color: hsl(348, 100%, 68%); }
+    .jogging { background-color: hsl(145, 58%, 55%); }
+    .chat    { background-color: hsl(264, 64%, 52%); }
+    .heart   { background-color: hsl(43, 84%, 65%); }
 
-
-
-
-
-
-    /* Structure */
-    .data1 {
-        background-color: hsl(15, 100%, 70%);
-        grid-column: 2;
-        grid-row: 1/2;
-    }
-
-    .data2 {
-        background-color: hsl(195, 74%, 62%);
-        grid-column: 3;
-        grid-row: 1/2;
-    }
-
-    .data3 {
-        background-color: hsl(348, 100%, 68%);
-        grid-column: 4;
-        grid-row: 1/2;
-    }
-
-    .data4 {
-        background-color: hsl(145, 58%, 55%);
-        grid-column: 2;
-        grid-row: 2/3;
-    }
-
-    .data5 {
-        background-color: hsl(264, 64%, 52%);
-        grid-column: 3;
-        grid-row: 2/3;
-    }
-
-    .data6 {
-        background-color: hsl(43, 84%, 65%);
-        grid-column: 4;
-        grid-row: 2/3;
-    }
-
-    .console {
-        background-color: hsl(195, 74%, 62%);
-    }
-
-    .book {
-        background-color: hsl(348, 100%, 68%);
-    }
-
-    .jogging {
-        background-color: hsl(145, 58%, 55%);
-    }
-
-    .chat {
-        background-color: hsl(264, 64%, 52%);
-    }
-
-    .heart {
-        background-color: hsl(43, 84%, 65%);
-    }
-    .handbag>img{
-        top:-30%;
-    }
-
-    .console>img {
-        top: -20%;
-    }
-
-    .book>img {
-        top: -20%;
-    }
-
-    .jogging>img {
-        top: -2%;
-    }
-
-    .heart>img {
-        left: 60%;
-        top:-20%;
-    }
-    .chat>img{
-        top:-40%;
-    }
-
+    .handbag>img { top: -30%; }
+    .console>img { top: -20%; }
+    .book>img    { top: -20%; }
+    .jogging>img { top: -2%; }
+    .heart>img   { left: 60%; top: -20%; }
+    .chat>img    { top: -40%; }
 }
